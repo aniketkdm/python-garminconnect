@@ -259,7 +259,7 @@ class Garmin(object):
 
         return self.fetch_data(activitiesurl)
 
-    """get_activities_by_date takes date is format yyyy-mm-dd and returns activities for the given date"""
+    # get_activities_by_date takes date is format yyyy-mm-dd and returns activities for the given date
     def get_activities_by_date(self, date):
         activitiesurl = self.url_activities + '?startDate=' + str(date)
         self.logger.debug("Fetching activities with url %s", activitiesurl)
